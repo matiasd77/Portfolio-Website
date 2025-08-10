@@ -1,0 +1,33 @@
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#0D9488;stop-opacity:0.1" />
+    </linearGradient>
+  </defs>
+  <rect width="300" height="200" fill="url(#bg)" rx="12"/>
+  <g transform="translate(150,100)">
+    <!-- Map Background -->
+    <rect x="-50" y="-40" width="100" height="80" rx="8" fill="#059669" opacity="0.1" stroke="#059669" stroke-width="2"/>
+    <!-- Map Grid Lines -->
+    <line x1="-50" y1="-20" x2="50" y2="-20" stroke="#059669" stroke-width="1" opacity="0.3"/>
+    <line x1="-50" y1="0" x2="50" y2="0" stroke="#059669" stroke-width="1" opacity="0.3"/>
+    <line x1="-50" y1="20" x2="50" y2="20" stroke="#059669" stroke-width="1" opacity="0.3"/>
+    <line x1="-30" y1="-40" x2="-30" y2="40" stroke="#059669" stroke-width="1" opacity="0.3"/>
+    <line x1="0" y1="-40" x2="0" y2="40" stroke="#059669" stroke-width="1" opacity="0.3"/>
+    <line x1="30" y1="-40" x2="30" y2="40" stroke="#059669" stroke-width="1" opacity="0.3"/>
+    <!-- Airplane -->
+    <g transform="translate(0,-10)">
+      <path d="M-25,0 L25,0 L20,-5 L15,-8 L-15,-8 L-20,-5 Z" fill="#059669" opacity="0.8"/>
+      <rect x="-5" y="-8" width="10" height="16" rx="5" fill="#059669"/>
+      <circle cx="0" cy="0" r="3" fill="#FFFFFF"/>
+      <path d="M-15,0 L-25,5 L-25,-5 Z" fill="#059669" opacity="0.6"/>
+      <path d="M15,0 L25,5 L25,-5 Z" fill="#059669" opacity="0.6"/>
+    </g>
+    <!-- Location Pins -->
+    <circle cx="-30" cy="-20" r="4" fill="#0D9488"/>
+    <circle cx="30" cy="20" r="4" fill="#0D9488"/>
+    <circle cx="0" cy="0" r="4" fill="#0D9488"/>
+  </g>
+  <text x="150" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#6B7280">Trip Planner</text>
+</svg>

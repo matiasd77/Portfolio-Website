@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matias Durollari - Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Matias Durollari</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Matias Durollari</span></h1>
+                <p class="hero-subtitle">Full Stack Developer</p>
+                <p class="hero-description">
+                    Turning ideas into clean, functional web applications
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-placeholder">
+                    <img src="assets/profile-placeholder.svg" alt="Matias Durollari" class="profile-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+        <!-- About Me Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                                         <div class="about-text">
+                         <h3 class="about-subtitle">Passionate Full Stack Developer</h3>
+                         <p class="about-description">
+                             As a Computer Science graduate, I have developed a strong passion for creating innovative web solutions that seamlessly integrate frontend design with backend functionality. My journey in technology has led me to specialize in full-stack development, where I can combine creativity with analytical problem-solving.
+                         </p>
+                         <p class="about-description">
+                             I'm particularly drawn to backend development and database design, enjoying the challenge of building robust, scalable systems that power modern applications. My academic background has given me a solid foundation in algorithms, data structures, and software engineering principles.
+                         </p>
+                     </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Work Experience Section -->
+        <section id="work-experience" class="work-experience">
+            <div class="container">
+                <h2 class="section-title">Work Experience</h2>
+                <div class="experience-timeline">
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div class="company-info">
+                                <h3 class="company-name">TechSpace</h3>
+                                <p class="company-location">Tirana, Albania</p>
+                            </div>
+                            <div class="role-info">
+                                <h4 class="job-role">AI Internship</h4>
+                                <p class="job-dates">04/02/2025 – 03/04/2025</p>
+                            </div>
+                        </div>
+                        <div class="experience-content">
+                            <p class="job-description">
+                                Developed an AI-driven training platform for the Albanian Development Fund (ADF) with React and MySQL. Features included custom learning paths, scheduled sessions, on-demand video tutorials, and an interactive chatbot using NLP. The platform is secure, scalable, and modular for future expansion.
+                            </p>
+                            <div class="project-link">
+                                <a href="https://github.com/matiasd77/Intership-Project" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div class="company-info">
+                                <h3 class="company-name">Test IO</h3>
+                                <p class="company-location">Tirana, Albania</p>
+                            </div>
+                            <div class="role-info">
+                                <h4 class="job-role">Tester (Freelance, Remote)</h4>
+                                <p class="job-dates">01/06/2024 – Current</p>
+                            </div>
+                        </div>
+                        <div class="experience-content">
+                            <ul class="responsibilities-list">
+                                <li>Conduct exploratory testing on web and mobile apps</li>
+                                <li>Identify and report bugs with reproduction steps</li>
+                                <li>Perform functional, usability, and regression testing</li>
+                                <li>Test across devices, OS, and browsers</li>
+                                <li>Provide detailed user experience feedback</li>
+                                <li>Collaborate with Test IO community and follow instructions</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div class="company-info">
+                                <h3 class="company-name">Teleperformance</h3>
+                                <p class="company-location">Tirana, Albania</p>
+                            </div>
+                            <div class="role-info">
+                                <h4 class="job-role">Customer Service Representative</h4>
+                                <p class="job-dates">10/09/2023 – 03/2025</p>
+                            </div>
+                        </div>
+                        <div class="experience-content">
+                            <ul class="responsibilities-list">
+                                <li>Handle customer inquiries</li>
+                                <li>Resolve issues and escalate when needed</li>
+                                <li>Process orders and returns</li>
+                                <li>Provide product information</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div class="company-info">
+                                <h3 class="company-name">Digital Riot</h3>
+                                <p class="company-location">Remote</p>
+                            </div>
+                            <div class="role-info">
+                                <h4 class="job-role">QA Tester (Freelance)</h4>
+                                <p class="job-dates">Current</p>
+                            </div>
+                        </div>
+                        <div class="experience-content">
+                            <ul class="responsibilities-list">
+                                <li>Test websites and applications for bugs and performance</li>
+                                <li>Report detailed bug reports and improve product quality</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Education and Training Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education and Training</h2>
+            <div class="education-content">
+                <div class="education-item">
+                    <div class="education-header">
+                        <h3 class="degree-title">Bachelor of Computer Science</h3>
+                        <p class="institution">Polis University</p>
+                        <p class="dates">2022 – Present</p>
+                    </div>
+                    <div class="education-details">
+                        <div class="coursework">
+                            <h4>Key Coursework Highlights:</h4>
+                            <ul>
+                                <li>Web Programming</li>
+                                <li>Data Structures</li>
+                                <li>Algorithms</li>
+                                <li>Artificial Intelligence</li>
+                                <li>Database Design</li>
+                                <li>App Development</li>
+                            </ul>
+                        </div>
+                        <div class="notable-project">
+                            <h4>Notable Project:</h4>
+                            <p>AI-powered Image Classification Pipeline using TensorFlow and Keras</p>
+                            <div class="project-link">
+                                <a href="https://colab.research.google.com/drive/1w9K5GDLlsacNl0-ZsZK2GbVtYP8IDJkm#scrollTo=Tgx6sjP2StmZ" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-header">
+                        <h3 class="degree-title">Java Programming and Spring Framework Developer Professional Certificate</h3>
+                        <p class="institution">CodeAcademy</p>
+                        <p class="dates">2023</p>
+                    </div>
+                    <div class="education-details">
+                        <p class="certificate-description">
+                            Completed comprehensive courses covering Java fundamentals, object-oriented programming, and advanced Java features. Also learned backend development using Spring Framework including building RESTful APIs, dependency injection, and database integration.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-header">
+                        <h3 class="degree-title">Data Science Workshop</h3>
+                        <p class="institution">University of New Haven</p>
+                        <p class="dates">2023</p>
+                    </div>
+                    <div class="education-details">
+                        <p class="certificate-description">
+                            Practical introduction to data science concepts for business decision-making, focusing on data analysis and visualization techniques.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-header">
+                        <h3 class="degree-title">Java Restaurant App Final Project</h3>
+                        <p class="institution">SDA Albania</p>
+                        <p class="dates">2023</p>
+                    </div>
+                    <div class="education-details">
+                        <p class="certificate-description">
+                            Developed a full-stack Java application simulating restaurant management functionalities.
+                        </p>
+                        <div class="project-link">
+                            <a href="https://github.com/matiasd77/Restaurant" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i>
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/ecommerce-placeholder.svg" alt="E-Commerce Platform" class="project-screenshot">
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>A full-stack e-commerce platform with user authentication, product management, and secure checkout.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Java</span>
+                            <span>MySQL</span>
+                            <span>Spring Boot</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/matiasd77/E-Commerce-Platform" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/trip-planner-placeholder.svg" alt="Trip Planner" class="project-screenshot">
+                    </div>
+                    <div class="project-content">
+                        <h3>Trip Planner</h3>
+                        <p>An interactive trip planner for organizing travel itineraries with location mapping and trip suggestions.</p>
+                        <div class="project-tech">
+                            <span>TypeScript</span>
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/matiasd77/Trip-Planner" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/smartcampus-placeholder.svg" alt="SmartCampus" class="project-screenshot">
+                    </div>
+                    <div class="project-content">
+                        <h3>SmartCampus</h3>
+                        <p>A university campus management system with admin dashboard, student profiles, and course management.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/matiasd77/SmartCampus" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section id="languages" class="languages">
+        <div class="container">
+            <h2 class="section-title">Languages</h2>
+            <div class="languages-content">
+                <div class="language-item">
+                    <div class="language-icon">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <div class="language-info">
+                        <h3>Albanian</h3>
+                        <p>Mother Language</p>
+                    </div>
+                </div>
+                <div class="language-item">
+                    <div class="language-icon">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <div class="language-info">
+                        <h3>Italian</h3>
+                        <p>Professional Proficiency</p>
+                    </div>
+                </div>
+                <div class="language-item">
+                    <div class="language-icon">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <div class="language-info">
+                        <h3>English</h3>
+                        <p>Professional Proficiency</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out!</p>
+                    <div class="contact-methods">
+                                                 <div class="contact-method">
+                             <i class="fas fa-envelope"></i>
+                             <div>
+                                 <h4>Email</h4>
+                                 <p>durollarimatias@gmail.com</p>
+                             </div>
+                         </div>
+                        <div class="contact-method">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <h4>GitHub</h4>
+                                <p><a href="https://github.com/matiasd77" target="_blank">github.com/matiasd77</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <p><a href="https://www.linkedin.com/in/matias-durollari-689b59267/" target="_blank">matias-durollari</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <input type="hidden" id="time" name="time">
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                                 <div class="footer-info">
+                     <h3>Matias Durollari</h3>
+                     <p><i class="fas fa-envelope"></i> durollarimatias@gmail.com</p>
+                     <p><i class="fas fa-phone"></i> 0675930999</p>
+                     <p><i class="fas fa-map-marker-alt"></i> Tirana, Albania</p>
+                 </div>
+                <div class="footer-social">
+                    <a href="https://github.com/matiasd77" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/matias-durollari-689b59267/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Matias Durollari. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
